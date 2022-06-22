@@ -9,8 +9,52 @@ The format is based on [Keep a Changelog](http://keepachangelog.com)
 <!-- Keep this up to date! After a release, change the tag name to the latest release -->
 [unreleased changes details]: https://github.com/Adobe-Consulting-Services/acs-aem-commons/compare/acs-aem-commons-5.0.14...HEAD
 
+### Fixed
+
+- #2837 - Fixed blank MCP reports when running on AEM as a Cloud Service with Forms SDK
+- #2826 - 5.3.1-SNAPSHOT build failing validation locally
+
+## 5.3.0 - 2022-04-15
+
+### Fixed
+
+- #2817 - Data Importer failed with per-sort was selected due to attempting to sort an immutable list (introduced in #2772)
+- #2806 - AEM Environment Indicator rendered two times when opening a Experience Fragment variation
+- #2812 - Fixed issue with Reports not reporting accurate Replication status when report is downloaded 
+- #2822 - Resolved OakPal issue 92 - False positive during build
+- #2794 - Added context prefix for redirect rules feature
+- #2821 - Replace Undescore.js dependency to Lodash.underscore (AEM version) in multifield, dialog-plugin, search-based-path-browser
+
+
 ### Changed
 
+- #2043 - Switch to filevault-package-maven-plugin
+- #2781 - Remove Adobe repositories from pom.xml
+- #2805 - Remove "min" packages
+- #2822 - Removed nodetypes-aem640.cnd from oakpal-checks. Superseded by biz.netcentric.aem:aem-nodetypes dependency.
+
+### Added
+
+- #2808 - Sorting numerical or Integer tags in ascending order in AEM (#2814)
+- #2818 - Added support for relative property paths in Data Importer
+
+## 5.2.0 - 2022-03-03
+
+### Fixed
+
+- Fixed XSS vulnerability in page compare 
+- #2783 and #2742 - Configurable localization of MCP based FormFields
+
+### Changed
+
+- #2775 - Update Maven plugins
+- #2777 - Fix Twitter service user mapping
+
+## 5.1.2 - 2022-01-21
+
+### Changed
+
+- #1718 - Use bnd-maven-plugin instead of maven-bundle-plugin
 - #2767 - ThrottledTaskRunnerTest.testExecutionOrder unstable on Mac OS
 - #2261 - Update to latest mocking libraries
 - #2753 - Update to AEM 6.4 dependencies
